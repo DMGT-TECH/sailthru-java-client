@@ -1,0 +1,15 @@
+nbproject
+build.xml
+src/main/com/sailthru/client/Ignore.java
+manifest.mf
+build
+.idea
+target
+lib
+.DS_Store
+*com/sailthru
+.project
+.classpath
+.settings/
+*.swp
+*.iml
