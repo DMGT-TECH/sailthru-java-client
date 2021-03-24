@@ -415,7 +415,7 @@ public class SailthruClient extends AbstractSailthruClient {
      * @throws IOException 
      */
     public JsonResponse processImportJob(ImportJob job) throws IOException {
-        return apiPost(job, job);
+        return apiPost(job, (ApiFileOrInputStreamParams) job);
     }
     
     
@@ -455,11 +455,11 @@ public class SailthruClient extends AbstractSailthruClient {
      * @throws IOException
      */
     public JsonResponse processUpdateJob(UpdateJob job) throws IOException {
-        return apiPost(job, job);
+        return apiPost(job, (ApiFileOrInputStreamParams) job);
     }
 
     public JsonResponse processPurchaseImportJob(PurchaseImportJob job) throws IOException {
-        return apiPost(job, job);
+        return apiPost(job, (ApiFileOrInputStreamParams) job);
     }
 
     public JsonResponse getUser(User user) throws IOException {
