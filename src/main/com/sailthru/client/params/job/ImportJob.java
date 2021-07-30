@@ -69,6 +69,9 @@ public class ImportJob extends Job implements ApiFileOrInputStreamParams {
         if (this.fileOrInputStream.file != null) {
             filesOrInputStreams.put("file", this.fileOrInputStream);
         }
+        if (this.fileOrInputStream.inputStream != null) {
+            filesOrInputStreams.put("file", this.fileOrInputStream);
+        }
         return filesOrInputStreams;
     }
 
