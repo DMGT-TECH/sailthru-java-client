@@ -23,10 +23,7 @@ public class ImportJob extends Job implements ApiFileOrInputStreamParams {
     private static final String JOB = "import";
     
     protected String emails;
-    //protected transient File file = null;
-    //protected transient InputStream inputStream = null;
-
-    protected FileOrInputStream fileOrInputStream = new FileOrInputStream();
+    protected transient FileOrInputStream fileOrInputStream = new FileOrInputStream();
 
     protected String list;
 
@@ -74,12 +71,4 @@ public class ImportJob extends Job implements ApiFileOrInputStreamParams {
         }
         return filesOrInputStreams;
     }
-
-//    public Map<String, File> getFileParams() {
-//        Map<String, File> files = new HashMap<String, File>();
-//        if (this.file != null) {
-//            files.put("file", this.file);
-//        }
-//        return files;
-//    }
 }
